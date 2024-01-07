@@ -1,13 +1,8 @@
 # импортируем библиотеку pandas
 import pandas as pd
-
-# указываем ссылку на датасет
-
-
-
 # читаем датасет в датафрейм
 df = pd.read_csv('Customers.csv', sep=';')
-print(df.columns.tolist())
+
 # фильтруем датафрейм по первому условию
 df_filtered_1 = df.query("Age > 30 and Income < 30000")
 
